@@ -1,0 +1,73 @@
+KunnChan / vscode.code-snippets
+Useful VSCode Snippets
+vscode.code-snippets
+{
+	"Console log": {
+		"prefix": "clg",
+		"body": [
+		  "console.log(\"${1:logger} \", $2);"
+		],
+		"description": "Console log"
+	  },
+	"React Function": {
+		"prefix": "rtsf",
+		"body": [
+		  "import React from 'react';",
+		  "",
+		  "type Props {",
+		  "  ${1:key} : ${2|number,string,undefined,null|}",
+		  "}",
+		  "export const ${3:functionName}: React.FC<Props> = ({$4}) => {",
+		  "    return (",
+		  "        <div>",
+		  "           $5",
+		  "        </div>",
+		  "      );",
+		  "}"
+		],
+		"description": "React Function"
+	},
+	"Import Library": {
+		"prefix": "imp",
+		"body": [
+		  "import { $2 } from \"$1\";"
+		],
+		"description": "Import Library"
+	},
+	"Import Default Library": {
+		"prefix": "impd",
+		"body": [
+		  "import $2 from \"$1\";"
+		],
+		"description": "Import Default Library"
+	},
+	"Export Library": {
+		"prefix": "exp",
+		"body": [
+		  "export { $2 as $3 } from \"$1\";"
+		],
+		"description": "Export Library"
+	},
+	"Export All Libraries": {
+		"prefix": "exa",
+		"body": [
+		  "export * from \"$1\";"
+		],
+		"description": "Export All Libraries"
+	},
+	"Arrow Function": {
+		"prefix": "arfn",
+		"body": [
+		  "const ${1:functionName} = ($2) =>{",
+		  "  $3",
+		  "}"
+		],
+		"description": "Arrow Function"
+	}
+}
+Comment on gist
+Leave a comment
+Notifications for this thread
+You’re receiving notifications because you authored the thread.
+
+Desktop version
